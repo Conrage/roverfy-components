@@ -1,0 +1,87 @@
+<!doctype html>
+<html class="h-full scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- PAGE TITLE -->
+    <title>Dialog Example | Roverfy</title>
+  </head>
+
+  <body
+    class="h-full overflow-hidden bg-white font-sans text-zinc-950 antialiased">
+    <!-- START WRAPPER -->
+    <div class="flex min-h-screen flex-col">
+      <div
+        class="relative z-10"
+        aria-labelledby="modal-title"
+        role="dialog"
+        aria-modal="true">
+        <div
+          class="fixed inset-0 bg-zinc-500 bg-opacity-75 transition-opacity"
+          aria-hidden="true"></div>
+
+        <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+          <div
+            class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+            <!-- START MODAL -->
+            <div
+              class="w-full max-w-2xl relative rounded-sm bg-white shadow-lg duration-200 sm:max-w-lg">
+              <div
+                class="flex flex-col gap-2 border-b border-zinc-200/50 bg-zinc-100/30 p-6 text-center sm:text-left">
+                <h2 class="text-xl font-semibold text-zinc-900">
+                  Your Dialog Title
+                </h2>
+                <p class="text-sm text-zinc-600">
+                  Your Dialog Description, if you want to add a description.
+                </p>
+              </div>
+              <div class="p-6">
+                <p class="text-left text-sm text-zinc-600">
+                  This is your dialog content, you can add anything you want
+                  here.
+                </p>
+              </div>
+              <div
+                data-slot="dialog-footer"
+                class="flex flex-col-reverse gap-2 border-t border-zinc-200/50 bg-zinc-100/30 p-6 sm:flex-row sm:justify-end">
+                <button
+                  type="button"
+                  class="rounded-xs inline-flex items-center justify-center gap-2 bg-white px-3 py-1.5 text-base font-medium tracking-tight text-zinc-950 shadow-sm ring-1 ring-inset ring-zinc-300 hover:bg-zinc-50 disabled:cursor-not-allowed disabled:opacity-60 sm:text-sm">
+                  Secondary Button
+                </button>
+                <button
+                  type="button"
+                  class="rounded-xs inline-flex items-center justify-center gap-2 bg-primary-500 px-3 py-1.5 text-base font-medium tracking-tight text-white shadow-sm hover:bg-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 disabled:cursor-not-allowed disabled:opacity-60 sm:text-sm">
+                  Primary Button
+                </button>
+              </div>
+              <button
+                type="button"
+                class="absolute size-4 right-4 top-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M18 6 6 18"></path>
+                  <path d="m6 6 12 12"></path>
+                </svg>
+                <span class="sr-only">Close</span>
+              </button>
+            </div>
+            <!-- END MODAL -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END WRAPPER -->
+  </body>
+</html>
